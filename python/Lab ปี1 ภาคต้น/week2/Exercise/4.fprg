@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-16 07:50:52 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo0NjowNCBQTTszMjc3"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo1MDo1MiBQTTszOzMzODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="weight" type="Integer" array="False" size=""/>
+            <declare name="height, BMI" type="Real" array="False" size=""/>
+            <output expression="&quot;&#3609;&#3657;&#3635;&#3627;&#3609;&#3633;&#3585; = &quot;" newline="True"/>
+            <input variable="weight"/>
+            <output expression="&quot;&#3626;&#3656;&#3623;&#3609;&#3626;&#3641;&#3591; = &quot;" newline="True"/>
+            <input variable="height"/>
+            <assign variable="BMI" expression="weight / (height ^ 2)"/>
+            <output expression="&quot;&#3588;&#3656;&#3634; BMI &#3586;&#3629;&#3591;&#3588;&#3640;&#3603;&#3588;&#3639;&#3629; &quot; &amp; BMI" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

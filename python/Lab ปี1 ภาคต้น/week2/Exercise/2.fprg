@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-16 07:42:37 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo0MDoxOSBQTTszMjc3"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo0MjozNyBQTTszOzMzODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X, Y, Z" type="Integer" array="False" size=""/>
+            <output expression="&quot;x = &quot;" newline="True"/>
+            <input variable="X"/>
+            <output expression="&quot;y = &quot;" newline="True"/>
+            <input variable="Y"/>
+            <assign variable="Z" expression="sqrt((X ^ 2) + (Y ^ 2))"/>
+            <output expression="&quot;Z = &quot; &amp; Z" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

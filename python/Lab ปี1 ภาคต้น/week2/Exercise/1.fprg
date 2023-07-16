@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-16 07:40:16 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzozNzo0MSBQTTszMjc4"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo0MDoxNiBQTTszOzMzODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="width, height, area" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#3588;&#3623;&#3634;&#3617;&#3585;&#3623;&#3657;&#3634;&#3591; &gt;&gt; &quot;" newline="True"/>
+            <input variable="width"/>
+            <output expression="&quot;&#3588;&#3623;&#3634;&#3617;&#3626;&#3641;&#3591; &gt;&gt; &quot;" newline="True"/>
+            <input variable="height"/>
+            <assign variable="area" expression="width * height"/>
+            <output expression="&quot;&#3614;&#3639;&#3657;&#3609;&#3607;&#3637;&#3656; = &quot; &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

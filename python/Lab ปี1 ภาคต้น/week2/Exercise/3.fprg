@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-16 07:45:51 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo0MjozOSBQTTszMjgx"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNjswNzo0NTo1MSBQTTsyOzMzODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r" type="Real" array="False" size=""/>
+            <output expression="&quot;&#3619;&#3633;&#3624;&#3617;&#3637; = &quot;" newline="True"/>
+            <input variable="r"/>
+            <declare name="area, circumference" type="Integer" array="False" size=""/>
+            <assign variable="area" expression="(22 / 7) * ( r^2)"/>
+            <assign variable="circumference" expression="2 * (22 / 7) * r"/>
+            <output expression="&quot;&#3614;&#3639;&#3657;&#3609;&#3607;&#3637;&#3656; = &quot; &amp; area" newline="True"/>
+            <output expression="&quot;&#3648;&#3626;&#3657;&#3609;&#3619;&#3629;&#3610;&#3623;&#3591; = &quot; &amp; circumference" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
