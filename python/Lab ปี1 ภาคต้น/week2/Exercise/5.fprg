@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-17 07:18:17 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNzswNzoxMjoxMyBQTTszMjcx"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNzswNzoxODoxNyBQTTszOzMzOTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="money, price, liter, change" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#3648;&#3591;&#3636;&#3609;&#3586;&#3629;&#3591;&#3588;&#3640;&#3603; = &quot;" newline="True"/>
+            <input variable="money"/>
+            <output expression="&quot;&#3619;&#3634;&#3588;&#3634;&#3609;&#3657;&#3635;&#3617;&#3633;&#3609;&#3605;&#3656;&#3629;&#3621;&#3636;&#3605;&#3619; = &quot;" newline="True"/>
+            <input variable="price"/>
+            <assign variable="liter" expression="int(money / price)"/>
+            <assign variable="change" expression="money % price"/>
+            <output expression="&quot;&#3588;&#3640;&#3603;&#3652;&#3604;&#3657;&#3609;&#3657;&#3635;&#3617;&#3633;&#3609; &quot; &amp; liter &amp; &quot; &#3621;&#3636;&#3605;&#3619;&quot; &amp; &quot; &#3648;&#3591;&#3636;&#3609;&#3607;&#3629;&#3609;&#3586;&#3629;&#3591;&#3588;&#3640;&#3603;&#3588;&#3639;&#3629; &quot; &amp; change &amp; &quot; &#3610;&#3634;&#3607;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

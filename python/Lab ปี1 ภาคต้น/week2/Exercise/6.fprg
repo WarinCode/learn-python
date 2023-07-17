@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-17 07:22:37 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNzswNzoxODoyMCBQTTszMjc1"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNzswNzoyMjozNyBQTTsyOzMzODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Animal" type="String" array="False" size=""/>
+            <output expression="&quot;&#3594;&#3639;&#3656;&#3629;&#3626;&#3633;&#3605;&#3623;&#3660; = &quot;" newline="True"/>
+            <input variable="Animal"/>
+            <declare name="length" type="Integer" array="False" size=""/>
+            <declare name="pos2nd" type="String" array="False" size=""/>
+            <assign variable="length" expression="len(Animal)"/>
+            <assign variable="pos2nd" expression="char(Animal , 1)"/>
+            <output expression="&quot;&#3588;&#3623;&#3634;&#3617;&#3618;&#3634;&#3623;&#3586;&#3629;&#3591;&#3626;&#3633;&#3605;&#3623;&#3660;&#3594;&#3639;&#3656;&#3629;  &quot; &amp; Animal &amp; &quot; = &quot; &amp; length" newline="True"/>
+            <output expression="&quot;index &#3607;&#3637;&#3656; 1 &#3586;&#3629;&#3591;&#3626;&#3633;&#3605;&#3623;&#3660;&#3594;&#3639;&#3656;&#3629; &quot; &amp; Animal &amp; &quot; &#3588;&#3639;&#3629; &quot; &amp; pos2nd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
