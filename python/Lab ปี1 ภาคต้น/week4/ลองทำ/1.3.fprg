@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-17 11:43:20 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNzsxMDozMjo1MiBQTTszMjcw"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xNzsxMTo0MzoyMCBQTTsxMTszNDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Amount, Discount" type="Real" array="False" size=""/>
+            <declare name="Membership" type="String" array="False" size=""/>
+            <declare name="percentage" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#3619;&#3634;&#3588;&#3634;&#3626;&#3636;&#3609;&#3588;&#3657;&#3634; &gt;&gt; &quot;" newline="True"/>
+            <input variable="Amount"/>
+            <output expression="&quot;&#3588;&#3640;&#3603;&#3648;&#3611;&#3655;&#3609;&#3626;&#3617;&#3634;&#3594;&#3636;&#3585;&#3627;&#3619;&#3639;&#3629;&#3652;&#3617;&#3656; (&#3606;&#3657;&#3634;&#3651;&#3594;&#3656;&#3605;&#3629;&#3610; y &#3606;&#3657;&#3634;&#3652;&#3617;&#3656;&#3605;&#3629;&#3610; n) &gt;&gt; &quot;" newline="True"/>
+            <input variable="Membership"/>
+            <if expression="Amount &gt; 5000 &amp;&amp; (Membership == &quot;y&quot; || Membership == &quot;Y&quot;)">
+                <then>
+                    <assign variable="percentage" expression="20"/>
+                </then>
+                <else>
+                    <if expression="Amount &gt; 5000 &amp;&amp; (Membership == &quot;N&quot; || Membership == &quot;n&quot;)">
+                        <then>
+                            <assign variable="percentage" expression="10"/>
+                        </then>
+                        <else>
+                            <assign variable="percentage" expression="5"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="Discount" expression="discount(Amount , percentage)"/>
+            <output expression="&quot;&#3619;&#3634;&#3588;&#3634;&#3626;&#3636;&#3609;&#3588;&#3657;&#3634;&#3585;&#3656;&#3629;&#3609;&#3618;&#3633;&#3591;&#3652;&#3617;&#3656;&#3652;&#3604;&#3657;&#3621;&#3604;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604; &quot; &amp; Amount &amp; &quot; &#3610;&#3634;&#3607; &quot; &amp; &quot; &#3588;&#3640;&#3603;&#3652;&#3604;&#3657;&#3621;&#3604;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604; &quot; &amp; percentage &amp; &quot;%&quot; &#13;&#10;&amp; &quot; &#3619;&#3634;&#3588;&#3634;&#3626;&#3636;&#3609;&#3588;&#3657;&#3634;&#3627;&#3621;&#3633;&#3591;&#3621;&#3604;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604; &quot; &amp; Discount" newline="False"/>
+        </body>
+    </function>
+    <function name="discount" type="Real" variable="value">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="p" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="value" type="Real" array="False" size=""/>
+            <comment text="&#3626;&#3641;&#3605;&#3619; &#13;&#10;Amount * ((100 - percentage) / 100)"/>
+            <assign variable="value" expression="a * ((100 - p) / 100)"/>
+        </body>
+    </function>
+</flowgorithm>

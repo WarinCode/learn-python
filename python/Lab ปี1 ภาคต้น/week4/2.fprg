@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-18 12:21:59 AM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xODsxMjowOToxNSBBTTszMjYx"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xODsxMjoyMTo1OSBBTTs1OzMzNzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Top, Low" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#3588;&#3623;&#3634;&#3617;&#3604;&#3633;&#3609;&#3650;&#3621;&#3627;&#3636;&#3605;&#3605;&#3633;&#3623;&#3610;&#3609;&#3588;&#3640;&#3603;&#3588;&#3639;&#3629; &gt;&gt; &quot;" newline="True"/>
+            <input variable="Top"/>
+            <output expression="&quot;&#3588;&#3623;&#3634;&#3617;&#3604;&#3633;&#3609;&#3650;&#3621;&#3627;&#3636;&#3605;&#3605;&#3633;&#3623;&#3621;&#3656;&#3634;&#3591;&#3588;&#3640;&#3603;&#3588;&#3639;&#3629; &gt;&gt; &quot;" newline="True"/>
+            <input variable="Low"/>
+            <if expression="(Top &lt; 120) and (Low &lt; 80)">
+                <then>
+                    <output expression="&quot;Good blood pressure.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(Top &lt; 129) and (Low &lt; 84)">
+                        <then>
+                            <output expression="&quot;Normal blood pressure.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(Top &lt; 139) and (Low &lt; 89)">
+                                <then>
+                                    <output expression="&quot;Quite high blood pressure.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(Top &gt; 139) and (Low &gt; 89)">
+                                        <then>
+                                            <output expression="&quot;High blood pressure.&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
