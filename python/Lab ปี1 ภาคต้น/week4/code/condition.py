@@ -13,14 +13,14 @@ print(not(a <= b))
 print(not(a <= 5) and (c != 20))
 # output: True
 
-# # Exercise 2
-# # ไม่ได้กำหนดค่าข้อมูลมาให้ ตัวแปรบอกแค่ชนิดข้อมูลอย่างเดียว
+# Exercise 2
+# ไม่ได้กำหนดค่าข้อมูลมาให้ ตัวแปรบอกแค่ชนิดข้อมูลอย่างเดียว
 Amount = float() 
 Member = bool() # True เป็นสมาชิก , False ไม่เป็นสมาชิก 
 
 Amount > 10_000
 (Member == False) and (Amount == 0)
-Amount >= 1
+Amount >= 0
 (Amount <= 20_000) and (Member == True)
 (Amount < 10_000) and (Member == False)
 (Amount > 50_000) or (Amount < 10_000)
