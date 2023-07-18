@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-18 10:07:59 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xODsxMDowMzoxOCBQTTszMjcx"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xODsxMDowNzo1OSBQTTsyOzMzODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="condition1, condition2, condition3" type="Boolean" array="False" size=""/>
+            <declare name="operation1, operation2, operation3" type="Integer" array="False" size=""/>
+            <assign variable="condition1" expression="true or false"/>
+            <assign variable="conditon2" expression="condition1"/>
+            <assign variable="condition3" expression="condition1"/>
+            <if expression="condition1">
+                <then>
+                    <assign variable="operation1" expression="1"/>
+                </then>
+                <else>
+                    <if expression="condition2">
+                        <then>
+                            <assign variable="operation2" expression="2"/>
+                        </then>
+                        <else>
+                            <if expression="condition3">
+                                <then>
+                                    <assign variable="operation3" expression="3"/>
+                                </then>
+                                <else>
+                                    <assign variable="operation4" expression="4"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

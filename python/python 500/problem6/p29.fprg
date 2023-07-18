@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-19 01:09:33 AM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xOTswMTowMDo1MiBBTTszMjUy"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xOTswMTowMTozOCBBTTsxO0FDRVIgVVNFUjU5NDk0ODY7REVTS1RPUC01OTQ5NDg2OzI1NjYtMDctMTk7MTI6Mzk6MzAgQU07cDI2LmZwcmc7NzQzOA=="/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0xOTswMTowOTozMyBBTTszOzMzNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="condition1, condition2, condition3, condition4, condition5, condition6, condition7" type="Boolean" array="False" size=""/>
+            <declare name="operation1, operation2, operation3, operation4, operation5, operation6, operation7, operation8, operation9, operation10, operation11, operation12, operation13, operation14, operation15" type="Integer" array="False" size=""/>
+            <assign variable="condition1" expression="true or false"/>
+            <assign variable="condition2" expression="condition1"/>
+            <assign variable="condition3" expression="condition2"/>
+            <assign variable="condition4" expression="condition3"/>
+            <assign variable="condition5" expression="condition4"/>
+            <assign variable="condition6" expression="condition5"/>
+            <assign variable="condition7" expression="condition6"/>
+            <if expression="condition1">
+                <then>
+                    <if expression="condition2">
+                        <then>
+                            <if expression="condition3">
+                                <then>
+                                    <assign variable="operation1" expression="1"/>
+                                    <assign variable="operation2" expression="2"/>
+                                </then>
+                                <else>
+                                    <assign variable="operation3" expression="3"/>
+                                </else>
+                            </if>
+                            <assign variable="operation4" expression="4"/>
+                        </then>
+                        <else>
+                            <assign variable="operation5" expression="5"/>
+                            <if expression="condition4">
+                                <then>
+                                    <assign variable="operation6" expression="6"/>
+                                    <assign variable="operation7" expression="7"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="operation8" expression="8"/>
+                </then>
+                <else>
+                    <assign variable="operation9" expression="9"/>
+                    <if expression="condition5">
+                        <then>
+                            <if expression="condition6">
+                                <then>
+                                    <assign variable="operation10" expression="10"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="condition7">
+                                <then>
+                                    <assign variable="operation11" expression="11"/>
+                                </then>
+                                <else/>
+                            </if>
+                            <assign variable="operation12" expression="12"/>
+                        </else>
+                    </if>
+                    <assign variable="operation13" expression="13"/>
+                </else>
+            </if>
+            <assign variable="operation14" expression="14"/>
+            <assign variable="operation15" expression="15"/>
+        </body>
+    </function>
+</flowgorithm>
