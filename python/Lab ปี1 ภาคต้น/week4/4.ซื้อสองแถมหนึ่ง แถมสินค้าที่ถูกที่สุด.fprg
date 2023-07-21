@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-20 02:02:09 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0yMDswMToxNDo1MCBQTTszMjYy"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wNy0yMDswMjowMjowOSBQTTsxMTszNDIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="priceBook1, priceBook2, priceBook3" type="Integer" array="False" size=""/>
+            <declare name="num, min, sum" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="1"/>
+            <output expression="&quot;&#3627;&#3609;&#3633;&#3591;&#3626;&#3639;&#3629;&#3648;&#3621;&#3656;&#3617;&#3607;&#3637;&#3656; &quot; &amp; num &amp; &quot; &#3617;&#3637;&#3619;&#3634;&#3588;&#3634; &gt;&gt;  &quot;" newline="True"/>
+            <input variable="priceBook1"/>
+            <assign variable="min" expression="priceBook1"/>
+            <assign variable="num" expression="num + 1"/>
+            <output expression="&quot;&#3627;&#3609;&#3633;&#3591;&#3626;&#3639;&#3629;&#3648;&#3621;&#3656;&#3617;&#3607;&#3637;&#3656; &quot; &amp; num &amp; &quot; &#3617;&#3637;&#3619;&#3634;&#3588;&#3634; &gt;&gt;  &quot;" newline="True"/>
+            <input variable="priceBook2"/>
+            <if expression="priceBook2 &lt; min">
+                <then>
+                    <assign variable="min" expression="priceBook2"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="num" expression="num + 1"/>
+            <output expression="&quot;&#3627;&#3609;&#3633;&#3591;&#3626;&#3639;&#3629;&#3648;&#3621;&#3656;&#3617;&#3607;&#3637;&#3656; &quot; &amp; num &amp; &quot; &#3617;&#3637;&#3619;&#3634;&#3588;&#3634; &gt;&gt;  &quot;" newline="True"/>
+            <input variable="priceBook3"/>
+            <if expression="priceBook3 &lt; min">
+                <then>
+                    <assign variable="min" expression="priceBook3"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="sum" expression="priceBook1 +  priceBook2 + priceBook3"/>
+            <output expression="&quot;&#3619;&#3634;&#3588;&#3634;&#3619;&#3623;&#3617;&#3607;&#3633;&#3657;&#3591; &quot; &amp; num &amp; &quot;&#3648;&#3621;&#3656;&#3617; &#3588;&#3639;&#3629; &quot;&amp; sum &amp; &quot; &#3610;&#3634;&#3607;&quot;" newline="True"/>
+            <output expression="&quot;&#3619;&#3634;&#3588;&#3634;&#3607;&#3637;&#3656;&#3605;&#3657;&#3629;&#3591;&#3592;&#3656;&#3634;&#3618;&#3588;&#3639;&#3629; &quot; &amp; abs(sum - min) &amp; &quot; &#3610;&#3634;&#3607;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
