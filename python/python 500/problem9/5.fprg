@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-08-08 08:46:49 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0wODswODo0NDoxOCBQTTszMjgz"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0wODswODo0Njo0OSBQTTsxOzMzOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="-2" end="8" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
