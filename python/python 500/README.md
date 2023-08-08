@@ -2,7 +2,7 @@
 
 ---
 
-[![1689736413404](image/README/1689736413404.png)]()
+<img src="https://raw.githubusercontent.com/VarinCode/learn-python/main/python/python%20500/image/book.png" alt="" >
 
 * ทำในเวลาว่างๆ
 * ทำโจทย์ไปเรื่อยๆจนกว่าโจทย์ในหนังสือจะหมด
