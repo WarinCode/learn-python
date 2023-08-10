@@ -2,7 +2,7 @@
 from random import *
 
 point = 0
-dictCard = {
+card = {
     1:randint(1,13),
     2:randint(1,13),
 }
@@ -10,22 +10,23 @@ value = {
     1: None,
     2: None
 }
+
 def randomCard():
     global point
-    for i in dictCard:
-        value[i] = 10 if dictCard[i] >= 10 else dictCard[i]
+    for i in card:
+        value[i] = 10 if card[i] >= 10 else card[i]
         point += value[i]
     point %= 10
-    
+
 randomCard()
-print(f'ได้ไพ่ : {dictCard[1]} : {dictCard[2]} = {point} แต้ม')
+print(f'ได้ไพ่ : {card[1]} : {card[2]} = {point} แต้ม')
 
 if point < 4:
     print('แต่มต่ำต้องเรียกไพ่ใบที่ 3')    
-    dictCard[3] = randint(1,13)
+    card[3] = randint(1,13)
     value[3] = 0
     randomCard()
-    print(f'ได้ไพ่ : {dictCard[1]} : {dictCard[2]} : {dictCard[3]} = {point} แต้ม')
+    print(f'ได้ไพ่ : {card[1]} : {card[2]} : {card[3]} = {point} แต้ม')
 
     
 # card1 = randint(1,13)
