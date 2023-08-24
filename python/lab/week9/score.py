@@ -4,7 +4,7 @@ score = []
 
 for i in subjects:
     for j in range(3):
-        s = eval(input(f'คะแนนสอบครั้งที่ {j + 1} {subjects[j]} : '))
+        s = eval(input(f'คะแนนสอบครั้งที่ {j + 1} {i} : '))
         score.append(s)
     print(f'ผลรวมคะแนนของวิชา {i} = {sum(score)}\n')
     score.clear()
