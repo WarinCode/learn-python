@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-08-31 07:43:45 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzozNDo1NyBQTTszMjgw"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzo0Mzo0NSBQTTszOzMzODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#3586;&#3657;&#3629; 3 &#3649;&#3610;&#3610; 1"/>
+            <declare name="number, counter, randomNumber" type="Integer" array="False" size=""/>
+            <declare name="isTrue" type="Boolean" array="False" size=""/>
+            <assign variable="randomNumber" expression="random(10)"/>
+            <assign variable="counter" expression="0"/>
+            <assign variable="isTrue" expression="true"/>
+            <while expression="isTrue">
+                <assign variable="counter" expression="counter +1"/>
+                <output expression="&quot;Enter Number : &quot;" newline="True"/>
+                <input variable="number"/>
+                <if expression="randomNumber == number">
+                    <then>
+                        <output expression="&quot;Your are right !!!&quot;" newline="True"/>
+                        <assign variable="isTrue" expression="false"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;You are wrong !!!&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;The number of trail is &quot; &amp; counter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

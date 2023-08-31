@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-08-31 07:19:35 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzoxNjozMiBQTTszMjcz"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzoxOTozNSBQTTsxOzMzODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#3586;&#3657;&#3629; 1"/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Number : &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="12" direction="inc" step="1">
+                <output expression="n &amp; &quot; x &quot; &amp; i &amp;&quot; = &quot; &amp; n * i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

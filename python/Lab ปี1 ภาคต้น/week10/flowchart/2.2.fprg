@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-08-31 07:44:50 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzoyMDowMSBQTTszMjY0"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzo0NDo1MCBQTTs0OzMzODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#3586;&#3657;&#3629; 2 &#3649;&#3610;&#3610; 2"/>
+            <declare name="score, sum, counter" type="Integer" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="counter" expression="0"/>
+            <while expression="true">
+                <assign variable="counter" expression="counter + 1"/>
+                <output expression="&quot;Enter Score #&quot; &amp; counter &amp; &quot; : &quot;" newline="True"/>
+                <input variable="score"/>
+                <assign variable="sum" expression="sum + score"/>
+                <if expression="score &lt; 0">
+                    <then>
+                        <assign variable="average" expression="sum / counter"/>
+                        <output expression="&quot;Sum of Score : &quot; &amp; sum" newline="True"/>
+                        <output expression="&quot;Average Score : &quot; &amp; average" newline="True"/>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER USER5949486"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-08-31 07:57:17 PM"/>
+        <attribute name="created" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMDsxMDoxMzoyNiBQTTszMjY2"/>
+        <attribute name="edited" value="QUNFUiBVU0VSNTk0OTQ4NjtERVNLVE9QLTU5NDk0ODY7MjU2Ni0wOC0zMTswNzo1NzoxNyBQTTs3OzMzOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#3586;&#3657;&#3629; 5 &#3649;&#3610;&#3610; 2"/>
+            <declare name="continue" type="String" array="False" size=""/>
+            <declare name="item, amount, n, c" type="Integer" array="False" size=""/>
+            <declare name="price" type="Integer" array="True" size="4"/>
+            <declare name="menu" type="String" array="True" size="4"/>
+            <declare name="isTrue" type="Boolean" array="False" size=""/>
+            <assign variable="price[0]" expression="20"/>
+            <assign variable="price[1]" expression="15"/>
+            <assign variable="price[2]" expression="20"/>
+            <assign variable="price[3]" expression="10"/>
+            <assign variable="menu[0]" expression="&quot;Coke&quot;"/>
+            <assign variable="menu[1]" expression="&quot;Milk&quot;"/>
+            <assign variable="menu[2]" expression="&quot;Tea&quot;"/>
+            <assign variable="menu[3]" expression="&quot;Water&quot;"/>
+            <output expression="&quot;Menu&quot;" newline="True"/>
+            <for variable="c" start="0" end="size(menu) - 1" direction="inc" step="1">
+                <output expression="c + 1 &amp;&quot;.&quot; &amp;  &quot;    &quot; &amp; menu[c] &amp; &quot; &quot; &amp; price[c] &amp; &quot; &quot; &amp; &quot;bath&quot;" newline="True"/>
+            </for>
+            <assign variable="n" expression="0"/>
+            <assign variable="continue" expression="&quot;&quot;"/>
+            <while expression="true">
+                <assign variable="isTrue" expression="true"/>
+                <assign variable="amount" expression="0"/>
+                <assign variable="n" expression="n + 1"/>
+                <output expression="&quot;Order #&quot; &amp; n" newline="True"/>
+                <while expression="isTrue">
+                    <output expression="&quot;Item : &quot;" newline="True"/>
+                    <input variable="item"/>
+                    <if expression="item == 0 || item &gt; 4 || item &lt; 0">
+                        <then>
+                            <output expression="&quot;Amount : &quot; &amp; amount &amp; &quot;  bath&quot;" newline="True"/>
+                            <output expression="&quot;Continue (Y/N) : &quot;" newline="True"/>
+                            <input variable="continue"/>
+                            <if expression="continue == &quot;n&quot; || continue == &quot;N&quot;">
+                                <then>
+                                    <breakpoint expression="" always="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="isTrue" expression="false"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="amount" expression="amount + price[item - 1]"/>
+                        </else>
+                    </if>
+                </while>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
