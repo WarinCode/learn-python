@@ -1,7 +1,6 @@
 # %% [markdown]
-# <h1>แบบฝึกหัด List, Tuple, Dictionary และ Set</h1>
+# <h1 align="center">แบบฝึกหัด List, Tuple, Dictionary และ Set</h1>
 # <hr>
-# 
 
 # %%
 # 1. สร้าง List ที่มีชื่อว่า "FoodMenu" ที่มีรายการอาหารดังต่อไปนี้
@@ -47,8 +46,13 @@ Faculty = ("Management", "Engineering", "Science", "Marine", "Economic")
 
 # %%
 # 7. เขียนโปรแกรมแสดงรายการคณะจากหมายเลขลำดับที่เป็นช่วง โดยกำหนดค่าตำแหน่งเริ่มต้น และตำแหน่งสิ้นสุดที่ต้องการ
-for i in range(0, Faculty.__len__()):
-    print(Faculty[i])
+
+start = int(input('ตำแหน่งเริ่มต้น : '))
+stop = int(input('ตำแหน่งสุดท้าย : '))
+if start in range(Faculty.__len__()) and stop in range(Faculty.__len__()) and start != stop:
+    for i in range(start , stop + 1):
+        print(Faculty[i])
+else: print(f'โปรดใส่ตัวเลขที่อยู่ระหว่าง 0 ถึง {len(Faculty) - 1}')
 
 # %%
 # 8. เขียนโปรแกรมค้นหาชื่อคณะที่ต้องการว่า ชื่อคณะนั้นหรือไม่
@@ -89,10 +93,12 @@ for k in FoodPrice:
 
 # %%
 # 4. เขียนโปรแกรมลบรายการอาหารที่ต้องการลบ โดยให้แสดงรายการอาหารก่อน แล้วให้เลือกหมายเลขรายการอาหารที่ต้องการลบ พร้อมแสดงรายการอาหารที่ลบแล้ว
-print(*FoodPrice)
-name = input('โปรดเลือกชื่อในรายการอาหารที่ต้องการลบ : ')
-FoodPrice.pop(name)
-print(*FoodPrice)
+li = list(FoodPrice)
+for i in range(li.__len__()):
+    print(f'{i + 1}. {li[i]}')
+num = int(input('โปรดเลือกหมายเลขรายการอาหารที่ต้องการลบ : '))
+del FoodPrice[str(li[num - 1])]
+print('รายการที่ลบแล้ว : ' , *FoodPrice , sep=' , ')
 
 # %%
 # 7. สร้าง Set ที่มีชื่อว่า “KUSRC” ที่มีรายการคณะในวิทยาเขตศรีราชา ได้แก่ {"Management", "Engineering", "Science", "Marine", "Economics"}  และสร้าง Set ที่มีชื่อว่า “KUBKK” ที่มีรายการคณะในวิทยาเขตบางเขน ได้แก่ {"Agriculture", "Business", "Fisheries", "Humanities", "Science", "Engineering", "Education", "Economics"}
