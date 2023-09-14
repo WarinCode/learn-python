@@ -34,7 +34,7 @@ def enroll(_set , credit , w = 1):
     return [_set , credit , w]
         
 while work != 0:
-    enroll_set, sum_credit, work = enroll(enroll_set, sum_credit)
+    enroll_set, sum_credit, work = enroll(_set = enroll_set, credit= sum_credit)
 
 def show_enroll():
     print(f"\n{stu_name} ลงทะเบียน {len(enroll_set)}วิชา ,{sum_credit}หน่วย")
