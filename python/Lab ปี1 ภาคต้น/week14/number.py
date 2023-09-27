@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk , Tk
 
 root = Tk()
-root.title("Fundamental Tkinter")
+root.title("The Numbers")
 root.geometry('380x250')
 
 showNumbers = tk.StringVar()

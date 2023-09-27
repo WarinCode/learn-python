@@ -4,7 +4,7 @@ from tkinter import messagebox , ttk , Label
 from random import randint
 
 root = tk.Tk()
-root.title("Fundamental Tkinter")
+root.title("Guess Number")
 root.geometry('550x180')
 
 randNum = randint(1,10)
