@@ -43,9 +43,9 @@ btn8 = ttk.Button(root,text='8',command=lambda:btn_clicked(8)).grid(row=3,column
 btn9 = ttk.Button(root,text='9',command=lambda:btn_clicked(9)).grid(row=3,column=3,padx=15 , pady=10)
 playAgain = ttk.Button(root, text='เล่นอีกรอบ?',command=lambda:newGame()).grid(row=4,column=2,padx=15 , pady=10)
 
-label = Label(root , text='จำนวนรอบที่ใช้ในการสุ่ม : ').place(x=330,y=10)
+label = Label(root , text='จำนวนรอบที่ใช้ไปในการสุ่ม : ').place(x=330,y=10)
 txtAll = ttk.Entry(root,textvariable=showCount)
 txtAll.config(width=6 , justify='center')
-txtAll.place(x=460,y=10)
+txtAll.place(x=467,y=10)
 
 root.mainloop()
