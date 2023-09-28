@@ -6,10 +6,10 @@ from random import randint
 root = tk.Tk()
 root.title("Guess Number")
 root.geometry('550x180')
-
-randNum = randint(1,10)
-showCount = tk.StringVar()
+randNum = randint(1,9)
 counter = 0
+showCount = tk.StringVar(value=counter)
+# showCount.set(counter)
 
 def btn_clicked(theNum):
     global showCount
@@ -28,8 +28,8 @@ def newGame():
     global showCount
     global counter
     counter = 0   
-    showCount.set('')
-    randNum = randint(1,10)
+    showCount.set(counter)
+    randNum = randint(1,9)
     messagebox.showinfo(title="แจ้งเตือน", message='เริ่มเล่นเกมใหม่!')
     
 btn1 = ttk.Button(root,text='1',command=lambda:btn_clicked(1)).grid(row=1,column=1,padx=15 , pady=10)
