@@ -17,7 +17,7 @@ def clear():
     global string
     string = ''
     showNumbers.set(string)
-    
+
 txtAll = ttk.Entry(root,textvariable=showNumbers)
 txtAll.grid_configure(row=1, column=2 ,padx=20,pady=20)
 txtAll.config(width=13 ,font=10)

@@ -1,8 +1,8 @@
 import tkinter as tk
-from tkinter import messagebox , ttk , Label
+from tkinter import messagebox , ttk , Label , Tk 
 from random import randint
 
-root = tk.Tk()
+root = Tk()
 root.title("Guess Number")
 root.geometry('550x180')
 
