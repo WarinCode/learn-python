@@ -1,15 +1,14 @@
 import tkinter as tk
-
 from tkinter import messagebox , ttk , Label
 from random import randint
 
 root = tk.Tk()
 root.title("Guess Number")
 root.geometry('550x180')
+
 randNum = randint(1,9)
 counter = 0
 showCount = tk.StringVar(value=counter)
-# showCount.set(counter)
 
 def btn_clicked(theNum):
     global showCount
