@@ -82,12 +82,12 @@ p2c2.set(p2c_li[1])
 p2point.set(point(*p2c_li))
 
 # แสดงว่าใครชนะ
-def winer(p1: int , p2: int) -> None:
+def winner(p1: int , p2: int) -> None:
     text = ''
     if p1 > p2: text = "Player1 Win!!"
     elif p2 > p1: text = "Player2 Win!!"
     elif p1 == p2: text = "Draw++"
     pWin.set(text) 
     
-winer(int(p1point.get()) , int(p2point.get()))
+winner(int(p1point.get()) , int(p2point.get()))
 mainloop()
