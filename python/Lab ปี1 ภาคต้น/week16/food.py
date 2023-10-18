@@ -9,6 +9,7 @@ def btnFood_clicked():
 #Clear ScrollText
 def btnClear_clicked():
     txtOrder.delete('1.0' , "end")
+    txtDetail.delete('1.0' , "end")
     
 # แก้ไขรายละเอียดและการจ่ายเงิน
 def edit_detail():
